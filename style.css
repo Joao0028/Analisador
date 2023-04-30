@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Quicksand:wght@300;400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsla(217, 100%, 50%, 1);
+
+}
+
+.titulo{
+    text-align: center;
+    margin: 1em;
+    color: white;
+    font-size: 26px;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    border: outset 2px white;
+    margin: auto;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 1px 5px 15px 1px black;
+}
+
+footer{
+    text-align: center;
+    margin: 1em;
+    color: white;
+}
+
+
+.numero{
+    text-align: center;
+    width: 65%;
+    height: 87%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    margin:0 auto;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid white;
+    box-shadow: 1px 3px 15px 0px hsla(217, 100%, 50%, 1);
+}
+.botaoA{
+    box-shadow: 1px 3px 15px 0px hsla(217, 100%, 50%, 1);
+    border-radius: 0 10px 10px 0;
+    border: 1px solid hsla(217, 100%, 50%, 1);
+    width: 30%;
+    height: 100%;
+    color: white;
+    background:hsla(217, 100%, 50%, 1);
+    font-family: 'Poppins', sans-serif;
+
+}
+.botaoB{
+    box-shadow: 1px 3px 15px 0px hsla(217, 100%, 50%, 1);
+    border-radius: 10px;
+    border: 1px solid hsla(217, 100%, 50%, 1);
+    width: 30%;
+    color: white;
+    padding: 0.3em;
+    background:hsla(217, 100%, 50%, 1);
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: auto;
+}
+
+button:hover, .numero:hover, .container-numeros:hover, .container-resultado-final {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 hsla(217, 100%, 50%, 1);
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+   .container-numeros{
+    width: 300px;
+    height: 200px;
+    background: white;
+    overflow-y: scroll;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em auto;
+    color: black;
+   }
+.container-resultado-final{
+    display: none;
+    width: 300px;
+    height: 158px;
+    background: white;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em auto;
+    color: black;
+    
+}
+   .N_adicionado{
+        margin: 8px;
+   }
+   .resultado-final{
+    color: #373b44;
+    margin:15px auto;
+   }
+
+   .ativada{
+    display: none;
+   }
+
+   
